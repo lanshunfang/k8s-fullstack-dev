@@ -1,0 +1,27 @@
+apiVersion: skaffold/v2beta22
+kind: Config
+metadata:
+  name: k-s-skaffold-angular-express-postgress
+build:
+  local:
+    push: false
+  artifacts:
+  - image: skaffold-create-react-app
+    docker:
+      dockerfile: Dockerfile
+    sync:
+      infer:
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '**/*.scss'
+      - '**/*.css'
+      - '**/*.png'
+      - '**/*.jpg'
+portForward:
+- resourceType: deployment
+  resourceName: create-react-app
+  port: 3000
+deploy:
+  kubectl:
+    manifests:
+    - kubernetes-manifest/deployment.react.yaml

@@ -1,0 +1,8 @@
+{
+    "cSpell.words": [
+        "fontsource",
+        "kubernetes"
+    ],
+    "pasteImage.basePath": "${currentFileDir}/doc",
+    "editor.formatOnSave": true,
+}

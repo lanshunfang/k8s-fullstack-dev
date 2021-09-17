@@ -1,3 +1,23 @@
+# Fullstack Kubernetes template
+
+- React/Redux/Material UI/TypeScript/Sass
+- Express.js
+- Postgress
+- Skaffold
+- Cypress.js
+
+# Description
+
+- It's of some values to develop fullstack directly against Kubernetes
+- This may transfer some workload of DevOps to developer
+- With help of Google Skaffold, the development experience is crispy.
+
+# Roadmap
+
+- Consider migrate to Helm chart
+
+# Others
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
@@ -42,3 +62,15 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Ref
+
+- https://github.com/corneliusweig/skaffold-create-react-app
+
+## Screenshots
+
+![](./doc/2021-09-16-15-57-50.png)
+
+## Author
+
+Paul Lan<lanshunfang#gmail.com>

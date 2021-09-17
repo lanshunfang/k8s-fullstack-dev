@@ -1,15 +1,14 @@
+import Button from '@mui/material/Button';
 import React, { useState } from 'react';
-
-import { useAppSelector, useAppDispatch } from '../../app/hooks';
+import { useAppDispatch, useAppSelector } from '../../app/hooks';
+import styles from './Counter.module.css';
 import {
   decrement,
-  increment,
-  incrementByAmount,
-  incrementAsync,
-  incrementIfOdd,
-  selectCount,
+  increment, incrementAsync, incrementByAmount, incrementIfOdd,
+  selectCount
 } from './counterSlice';
-import styles from './Counter.module.css';
+
+
 
 export function Counter() {
   const count = useAppSelector(selectCount);
@@ -21,21 +20,22 @@ export function Counter() {
   return (
     <div>
       <div className={styles.row}>
-        <button
+        <Button
+          variant="contained"
           className={styles.button}
           aria-label="Decrement value"
           onClick={() => dispatch(decrement())}
         >
           -
-        </button>
+        </Button>
         <span className={styles.value}>{count}</span>
-        <button
+        <Button
           className={styles.button}
           aria-label="Increment value"
           onClick={() => dispatch(increment())}
         >
           +
-        </button>
+        </Button>
       </div>
       <div className={styles.row}>
         <input
